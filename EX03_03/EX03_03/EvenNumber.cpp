@@ -3,27 +3,30 @@
 using namespace std;
 
 class EvenNumber {
-public:	
+private:
 	int number;
+public:	
 	EvenNumber(){
 		number = 0;
 	}
-	EvenNumber(int stu_number){
-		number = stu_number;
+	EvenNumber(int new_value){
+		number = new_value;
 	}
 	int getValue(){
 		return number;
 	}
 	int getNext(){
-		return (number + 2);
+		return (getValue() + 2);
 	}
 	int getPrevious(){
-		return (number - 2);
+		return (getValue() - 2);
 	}
 };
 
 int main();
 
-EvenNumber N1(16);
+EvenNumber N1 (16);
 
-N1.getValue();
+cout << "Next even number is: " << getNext() << endl;
+cout << "Previous even number is: " << getPrevious() << endl;
+
