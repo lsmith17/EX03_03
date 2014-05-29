@@ -23,10 +23,13 @@ public:
 	}
 };
 
-int main();
+int main(){
 
-EvenNumber N1 (16);
+	EvenNumber N1(16);
 
-cout << "Next even number is: " << getNext() << endl;
-cout << "Previous even number is: " << getPrevious() << endl;
+	cout << "Next even number is: " << N1.getNext() << endl;
+	cout << "Previous even number is: " << N1.getPrevious() << endl;
+
+	return 0;
+}
 
